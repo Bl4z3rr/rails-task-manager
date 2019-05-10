@@ -1,0 +1,23 @@
+<%= form_for(@task) do |t| %>
+<div class="container form-group">
+  <%= t.label :title %>
+  <%= t.text_field :title, class: 'form-control' %>
+</div>
+
+<div class="container form-group">
+  <%= t.label :details %>
+  <%= t.text_field :details, class: 'form-control' %>
+</div>
+
+<div class="container form-group">
+  <%= t.label :completed %>
+  <%= t.text_field :completed, class: 'form-control' %>
+</div>
+
+<div class="container form-group">
+  <%= t.submit class: 'btn btn-primary' %>
+</div>
+
+<% end %>
+<%= link_to 'Back', tasks_path, class: 'btn btn-primary' %>
+
